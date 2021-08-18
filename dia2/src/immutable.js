@@ -5,10 +5,13 @@ const john = {
   hobbies: ['Surf', 'Design'],
 }
 
-const jane = john
+// aqui adiciono os dados de john a jane conservando a imutabilidade, em vez do metodo push utilizamos o spread operators [...]
+const jane = {
+  ...john,
+  name: 'jane',
+  hobbies: ['MuayThai', 'Programming', ...john.hobbies ],
+}
 
-jane.name = 'Jane'
-jane.hobbies.push('MuayThai', 'Programming')
 
 console.log('John:', john)
 console.log('Jane:', jane)
