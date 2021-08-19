@@ -1,3 +1,5 @@
+//Exercício 01 - Imutabilidade
+
 const john = {
   name: 'John',
   surname: 'Doe',
